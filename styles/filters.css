@@ -1,0 +1,74 @@
+/* Filter Container - now using section structure. */
+.filter-container {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Filter rows - now inside section-content. */
+.filter-row {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Last filter row shouldn't have bottom margin. */
+.filter-row:last-child {
+    margin-bottom: 0;
+}
+
+/* Filter elements styling. */
+.difficulty-filter,
+.importance-filter,
+.tag-include-filter,
+.tag-exclude-filter {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+
+/* Input/select styling. */
+#difficulty,
+#importance,
+#tags,
+#tags-exclude {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Container that contains the Apply Filters button. */
+.filter-button-container {
+    width: 90%;
+
+    /* Center the button. */
+    display: block;
+    margin: 10px auto;
+}
+
+/* Apply Filters button. */
+.filter-button {
+    /* Center this button. */
+    display: flex;
+    justify-content: center;
+}
+
+/* Apply Filters button styling. */
+#apply-filters {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Apply Filters-hover button styling. */
+#apply-filters:hover {
+    background: #2980b9;
+}

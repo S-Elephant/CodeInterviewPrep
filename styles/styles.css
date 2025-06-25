@@ -1,0 +1,86 @@
+@import 'badges.css';
+@import 'collapse.css';
+@import 'filters.css';
+@import 'floating-container.css';
+@import 'question-card.css';
+@import 'settings.css';
+
+/* Body. */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Container that contains both the filters and questions. */
+.quiz-container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header 1. */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Question filter header. */
+.filter-header {
+	color: #2c3e50;
+    margin: -0.5rem 0 1rem 0;
+    padding: 0;
+}
+
+/* Multi-purpose label. */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Default select control. */
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Default button styling. */
+button {
+    padding: 8px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Default button-hover styling. */
+button:hover {
+    background: #2980b9;
+}
+
+/* Shows how many questions are shown and how many questions there are in total. */
+.question-count {
+    text-align: right;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Error. */
+.no-questions, .error {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px;
+}

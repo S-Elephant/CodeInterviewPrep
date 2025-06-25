@@ -1,0 +1,112 @@
+/* Question card styling with difficulty-colored left border. */
+.question {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: white;
+}
+
+/* Easy difficulty color indicator. */
+.question.easy {
+    border-left: 4px solid #4CAF50;
+}
+
+/* Medium difficulty color indicator. */
+.question.medium {
+    border-left: 4px solid #FFC107;
+}
+
+/* Hard difficulty color indicator. */
+.question.hard {
+    border-left: 4px solid #F44336;
+}
+
+/* New question header layout with metadata above question text. */
+.question-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 10px;
+}
+
+/* Container for badges and tags. */
+.metadata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+/* Tags styling. Appears near the top on the right. */
+.tags {
+    font-size: 0.875rem;
+    color: #555;
+    background: #f5f5f5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-left: auto; /* Pushes tags to right. */
+    order: 2; /* Ensures tags stay on right even when wrapping. */
+}
+
+/* Main question text styling. */
+.question-text {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Multiple choice option styling. */
+.option {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Hover state for options. */
+.option:hover {
+    background: #f1f1f1;
+}
+
+/* Check answer button. */
+.check-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Feedback message container. */
+.feedback {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Correct answer spoiler section. */
+.spoiler {
+    padding: 10px;
+    margin-top: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #6c757d;
+    font-size: 0.9em;
+}
+
+/* Hidden elements (initially hidden feedback). */
+.hidden {
+    display: none;
+}
+
+/* Positive feedback styling. */
+.feedback.correct {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* Negative feedback styling. */
+.feedback.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+}

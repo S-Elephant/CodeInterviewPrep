@@ -1,0 +1,99 @@
+/* Difficulty badges. */
+.difficulty-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+/* Easy difficulty badge. */
+.difficulty-badge.easy {
+    background-color: #4CAF50;
+}
+
+/* Medium difficulty badge. */
+.difficulty-badge.medium {
+    background-color: #FFC107;
+    color: #333;
+}
+
+/* Hard difficulty badge. */
+.difficulty-badge.hard {
+    background-color: #F44336;
+}
+
+/* Importance badges. */
+.importance-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    margin-left: 8px;
+}
+
+/* Question badges container. */
+.question-badges-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Essential importance badge. */
+.importance-badge.essential {
+    background-color: #8B0000;
+}
+
+/* Important importance badge. */
+.importance-badge.important {
+    background-color: #FF4500;
+}
+
+/* Standard importance badge. */
+.importance-badge.standard {
+    background-color: #FFA500;
+    color: #333;
+}
+
+/* Rare importance badge. */
+.importance-badge.rare {
+    background-color: #9ACD32;
+    color: #333;
+}
+
+/* Very rare importance badge. */
+.importance-badge.very-rare {
+    background-color: #808080;
+}
+
+/* Question tags badge.*/
+.tags {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    background: #f1f1f1;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+/* Answer badge container used for displaying the correct answers for text-input questions only. */
+.multi-correct-answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+/* Answer badge used for displaying the correct answers for text-input questions only. */
+.multi-correct-answer-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background-color: #f3f4f6;
+    color: #374151;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    border: 1px solid #e5e7eb;
+}

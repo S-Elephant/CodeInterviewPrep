@@ -1,0 +1,48 @@
+﻿/* Container that floats and remains on the screen even when scrolling far away. */
+.floating-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Item inside the floating-container. */
+.floating-item {
+    pointer-events: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+/* Scroll to top button. */
+#scrollToTop {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Show scroll to top button if the screen width is at least 900px. */
+@media (min-width: 900px) {
+    #scrollToTop {
+        margin-left: 20px;
+        visibility: visible;
+        pointer-events: auto;
+        border-radius: 50px;
+    }
+}
+
+/* Score display. */
+#scoreDisplay {
+    margin-right: 80px;
+    background-color: #2196F3;
+    cursor: default;
+    border-radius: 12px;
+
+    transition: background-color 0.8s ease; /* Smoothly change the background color instead of instantly. */
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quiz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Container that contains the entire quiz. -->
+    <div class="quiz-container">
+        <h1>Programming Knowledge Quiz</h1>
+        
+        <!-- Filters Section. -->
+        <div class="filter-container">
+            <div class="section-header">
+                <h2 class="filter-header">Filters</h2>
+                <button class="collapse-toggle" data-target="filter-container"></button>
+            </div>
+            
+            <div class="section-content">
+                <!-- Difficulty filter. -->
+                <div class="filter-row difficulty-filter">
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="all">All difficulties</option>
+                        <option value="easy">Easy only</option>
+                        <option value="easy+">Easy and above</option>
+                        <option value="medium">Medium only</option>
+                        <option value="medium+">Medium and above</option>
+                        <option value="medium-">Medium and below</option>
+                        <option value="hard">Hard only</option>
+                        <option value="hard-">Hard and below</option>
+                    </select>
+                </div>
+                
+                <!-- Importance filter. -->
+                <div class="filter-row importance-filter">
+                    <label for="importance">Importance:</label>
+                    <select id="importance">
+                        <option value="all">All importance levels</option>
+                        <option value="essential">Essential</option>
+                        <option value="essential+">Essential and above</option>
+                        <option value="important">Important</option>
+                        <option value="important+">Important and above</option>
+                        <option value="standard">Standard</option>
+                        <option value="standard+">Standard and above</option>
+                        <option value="standard-">Standard and below</option>
+                        <option value="rare">Rare</option>
+                        <option value="rare-">Rare and below</option>
+                        <option value="very rare">Very rare</option>
+                    </select>
+                </div>
+                
+                <!-- Tags filter. -->
+                <div class="filter-row tag-include-filter">
+                    <label for="included-tags">Include only these tags (comma-separated):</label>
+                    <input type="text" id="included-tags" placeholder="e.g., c#, fundamental">
+                </div>
+                
+                <!-- Tags exclusion filter. -->
+                <div class="filter-row tag-exclude-filter">
+                    <label for="excluded-tags">Exclude these tags (comma-separated):</label>
+                    <input type="text" id="excluded-tags" placeholder="e.g., database, theory">
+                </div>
+                
+                <!-- Filter button. -->
+                <div class="filter-button-container">
+                    <button class="filter-button" id="apply-filters">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Settings Section. -->
+        <div class="settings-container collapsed">
+            <div class="section-header">
+                <h2 class="settings-header">Settings</h2>
+                <button class="collapse-toggle" data-target="settings-container"></button>
+            </div>
+            
+            <div class="section-content">
+                <div class="settings-row">
+                    <label>
+                        <input type="checkbox" id="shuffle-questions" checked>
+                        Randomize order of questions
+                    </label>
+                </div>
+                <div class="settings-row">
+                    <label>
+                        <input type="checkbox" id="shuffle-answers" checked>
+                        Randomize order of answers
+                    </label>
+                </div>
+                <div class="settings-row">
+                    <label>
+                        <input type="checkbox" id="show-difficulty">
+                        Show difficulty badges
+                    </label>
+                </div>
+                <div class="settings-row">
+                    <label>
+                        <input type="checkbox" id="show-importance">
+                        Show importance badges
+                    </label>
+                </div>
+                <div class="settings-row">
+                    <label>
+                        <input type="checkbox" id="show-tags" checked>
+                        Show tags
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Show question count. -->
+        <div class="question-count">
+            Showing <span id="shown-count">0</span> of <span id="total-count">0</span> questions
+        </div>
+        
+        <div id="questions-container"></div>
+    </div>
+
+    <!-- Container that floats and remains on the screen even when scrolling far away. -->
+    <div class="floating-container">
+        <!-- Scroll to top button. -->
+        <button id="scrollToTop" class="floating-item">↑</button>
+
+        <!-- Score display. -->
+        <div id="scoreDisplay" class="floating-item">0/0 (0%, 0 total)</div>
+    </div>
+
+    <!-- Load all scripts in a Github Pages compatible way. -->
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/quizQuestionAnswer.js"></script>
+    <script src="scripts/quizQuestion.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/quizScores.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+License Disclaimer
+
+This project includes resources (such as images) that may be subject to additional licenses beyond the primary license of the project. Specifically, some materials are sourced from third-party platforms (e.g., Wikipedia, Wikimedia Commons) and are used under licenses such as Creative Commons Attribution 3.0 (CC BY 3.0) or similar.
+
+Please refer to the individual resource metadata or source links for exact licensing terms. It is your responsibility to ensure compliance with those third-party licenses when reusing or redistributing the content.

@@ -842,7 +842,7 @@
 			"To force the client to redirect"
 		],
 		"correctIndices": [1],
-		"explanation": "1XX codes (e.g., 100 Continue) are <b>informational</b> and rarely used in modern web apps. They indicate interim responses while the request is still being processed.",
+		"explanation": "1XX codes (e.g., 100 Continue) are <b>informational</b> and rarely used in modern web apps. They indicate interim responses while the request is still being processed.<br><br> <b>To confirm successful request completion:</b> is wrong because \"successful completion\" implies the request is finished, but 1XX codes explicitly mean the request is still in progress.",
 		"tags": ["http", "status-code"],
 		"difficulty": "easy",
 		"importance": "rare"
